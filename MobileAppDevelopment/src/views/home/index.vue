@@ -6,14 +6,7 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
-      <h1 class="px-4 py-5 text-center">Welcome!</h1>
-      <div class="px-4 py-5 text-center">
-        <h1>Activity 15:</h1>
-        <h1>Mobile App Development</h1>
-        <h1>using Ionic Framework</h1>
-      </div>
-    </ion-content>
+    <ion-content :fullscreen="true"> </ion-content>
   </ion-page>
 </template>
 
