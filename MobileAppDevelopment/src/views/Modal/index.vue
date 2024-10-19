@@ -57,7 +57,7 @@ import { IonBackButton, IonButtons, IonRouterOutlet } from '@ionic/vue';
 import { menu, home, person } from 'ionicons/icons';
 
 export default defineComponent({
-  name: 'CardPage',
+  name: 'modalPage',
   components: {
     IonButton,
     IonBackButton,
