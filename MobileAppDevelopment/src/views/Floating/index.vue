@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
-        <ion-title>Card Page</ion-title>
+        <ion-title> Floating Action Button </ion-title>
       </ion-toolbar>
     </ion-header>
 
