@@ -25,6 +25,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import {
+  IonBackButton,
+  IonButtons,
   IonTabBar,
   IonTabButton,
   IonTabs,
@@ -39,6 +41,8 @@ import { menu, home, notifications, person } from 'ionicons/icons';
 export default defineComponent({
   name: 'App',
   components: {
+    IonBackButton,
+    IonButtons,
     IonTabBar,
     IonTabButton,
     IonTabs,

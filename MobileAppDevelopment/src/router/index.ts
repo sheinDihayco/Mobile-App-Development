@@ -18,6 +18,27 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/index/index.vue'),
   },
   {
+    path: '/card',
+    name: 'card',
+    component: () => import('@/views/Card/index.vue'),
+  },
+  {
+    path: '/modal',
+    name: 'modal',
+    component: () => import('@/views/Modal/index.vue'),
+  },
+  {
+    path: '/reorder',
+    name: 'reorder',
+    component: () => import('@/views/reorder/index.vue'),
+  },
+  {
+    path: '/float',
+    name: 'float',
+    component: () => import('@/views/Floating/index.vue'),
+  },
+
+  {
     path: '/tabs/',
     component: Footer,
     children: [
@@ -25,22 +46,10 @@ const routes: Array<RouteRecordRaw> = [
         path: 'home',
         component: () => import('@/views/home/index.vue'),
       },
-    ],
-  },
-  {
-    path: '/tabs/',
-    component: Footer,
-    children: [
       {
         path: 'profile',
         component: () => import('@/views/profile/index.vue'),
       },
-    ],
-  },
-  {
-    path: '/tabs/',
-    component: Footer,
-    children: [
       {
         path: 'menu',
         component: () => import('@/views/menu/index.vue'),
