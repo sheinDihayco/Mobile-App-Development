@@ -7,6 +7,9 @@
     </ion-header>
 
     <ion-content color="light">
+      <ion-toolbar>
+        <ion-title> Midterm Activity </ion-title>
+      </ion-toolbar>
       <ion-list>
         <ion-item :button="true" @click="cardScreen()">
           <ion-label>
@@ -38,6 +41,29 @@
             <p>
               Fabs are container elements that contain one or more fab buttons.
             </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-toolbar>
+          <ion-title> Prefinal Activity </ion-title>
+        </ion-toolbar>
+
+        <ion-item :button="true" @click="swiperScreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 1: Swiper Slider</h2>
+            <p>Learn how to implement slider</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="swiperloopScreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 2 : For Loop with components</h2>
+            <p>Learn how to implement loop around reusable components</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="localstorageScreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 3 : Local Device Storage</h2>
+            <p>Learn how to implement device storage</p>
           </ion-label>
         </ion-item>
       </ion-list>
@@ -80,16 +106,25 @@ export default defineComponent({
   },
   methods: {
     async cardScreen() {
-      this.$router.push('/card');
+      this.$router.push('/tabs/card');
     },
     async modalScreen() {
-      this.$router.push('/modal');
+      this.$router.push('/tabs/modal');
     },
     async reorderScreen() {
-      this.$router.push('/reorder');
+      this.$router.push('/tabs/reorder');
     },
     async floatScreen() {
-      this.$router.push('/float');
+      this.$router.push('/tabs/float');
+    },
+    async swiperScreen() {
+      this.$router.push('/tabs/swiper');
+    },
+    async swiperloopScreen() {
+      this.$router.push('/tabs/swiper-loop');
+    },
+    async localstorageScreen() {
+      this.$router.push('/tabs/local-storage');
     },
   },
 });

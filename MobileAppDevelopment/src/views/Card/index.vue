@@ -53,30 +53,6 @@
         <ion-button fill="clear">Action 2</ion-button>
       </ion-card>
     </ion-content>
-
-    <ion-footer>
-      <ion-toolbar class="p-1">
-        <ion-tabs>
-          <ion-router-outlet></ion-router-outlet>
-          <ion-tab-bar slot="bottom">
-            <ion-tab-button tab="tab1" href="/tabs/home">
-              <ion-icon aria-hidden="true" :icon="home" />
-              <ion-label>Home</ion-label>
-            </ion-tab-button>
-
-            <ion-tab-button tab="tab2" href="/tabs/profile">
-              <ion-icon aria-hidden="true" :icon="person" />
-              <ion-label>Profile</ion-label>
-            </ion-tab-button>
-
-            <ion-tab-button tab="tab3" href="/tabs/menu">
-              <ion-icon aria-hidden="true" :icon="menu" />
-              <ion-label>Menu</ion-label>
-            </ion-tab-button>
-          </ion-tab-bar>
-        </ion-tabs>
-      </ion-toolbar>
-    </ion-footer>
   </ion-page>
 </template>
 

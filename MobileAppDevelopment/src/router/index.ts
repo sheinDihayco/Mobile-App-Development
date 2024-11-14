@@ -18,27 +18,6 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/index/index.vue'),
   },
   {
-    path: '/card',
-    name: 'card',
-    component: () => import('@/views/Card/index.vue'),
-  },
-  {
-    path: '/modal',
-    name: 'modal',
-    component: () => import('@/views/Modal/index.vue'),
-  },
-  {
-    path: '/reorder',
-    name: 'reorder',
-    component: () => import('@/views/reorder/index.vue'),
-  },
-  {
-    path: '/float',
-    name: 'float',
-    component: () => import('@/views/Floating/index.vue'),
-  },
-
-  {
     path: '/tabs/',
     component: Footer,
     children: [
@@ -53,6 +32,34 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'menu',
         component: () => import('@/views/menu/index.vue'),
+      },
+      {
+        path: 'card',
+        component: () => import('@/views/Card/index.vue'),
+      },
+      {
+        path: 'modal',
+        component: () => import('@/views/Modal/index.vue'),
+      },
+      {
+        path: 'reorder',
+        component: () => import('@/views/reorder/index.vue'),
+      },
+      {
+        path: 'float',
+        component: () => import('@/views/Floating/index.vue'),
+      },
+      {
+        path: 'swiper',
+        component: () => import('@/views/Swiper/index.vue'),
+      },
+      {
+        path: 'swiper-loop',
+        component: () => import('@/views/Swiper-Loop/index.vue'),
+      },
+      {
+        path: 'local-storage',
+        component: () => import('@/views/localstorage/index.vue'),
       },
     ],
   },
