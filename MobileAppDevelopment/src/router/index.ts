@@ -61,6 +61,18 @@ const routes: Array<RouteRecordRaw> = [
         path: 'local-storage',
         component: () => import('@/views/localstorage/index.vue'),
       },
+      {
+        path: 'MAP',
+        component: () => import('@/views/MAP/index.vue'),
+      },
+      {
+        path: 'GPS',
+        component: () => import('@/views/GPS/index.vue'),
+      },
+      {
+        path: 'camera',
+        component: () => import('@/views/Camera/index.vue'),
+      },
     ],
   },
 ];

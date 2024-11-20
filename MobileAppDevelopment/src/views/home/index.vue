@@ -66,6 +66,25 @@
             <p>Learn how to implement device storage</p>
           </ion-label>
         </ion-item>
+
+        <ion-item :button="true" @click="mapScreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 4: Map Implementation</h2>
+            <p>Learn how to implement map in ionic</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="GPSscreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 5 : GPS | Geolocation</h2>
+            <p>Get latitude and longitude</p>
+          </ion-label>
+        </ion-item>
+        <ion-item :button="true" @click="cameraScreen()">
+          <ion-label>
+            <h2 class="text-bold">Act 6 : Camera Implementation</h2>
+            <p>Learn how to implement camera in ionic</p>
+          </ion-label>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-page>
@@ -125,6 +144,15 @@ export default defineComponent({
     },
     async localstorageScreen() {
       this.$router.push('/tabs/local-storage');
+    },
+    async mapScreen() {
+      this.$router.push('/tabs/map');
+    },
+    async GPSscreen() {
+      this.$router.push('/tabs/GPS');
+    },
+    async cameraScreen() {
+      this.$router.push('/tabs/camera');
     },
   },
 });
