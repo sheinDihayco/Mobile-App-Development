@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
-        <ion-title class="bg-warning"> Local Storage </ion-title>
+        <ion-title> Local Storage </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>

@@ -10,7 +10,7 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-card>
+      <ion-card class="p-2">
         <ion-card-header>
           <ion-card-title>Card Title</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -22,7 +22,7 @@
         </ion-card-content>
       </ion-card>
 
-      <ion-card>
+      <ion-card class="p-2">
         <img
           alt="Silhouette of mountains"
           src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -32,19 +32,19 @@
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
+        <ion-card-content class="ml-2">
           Here's a small text description for the card content. Nothing more,
           nothing less.
         </ion-card-content>
       </ion-card>
 
-      <ion-card>
+      <ion-card class="p-2">
         <ion-card-header>
           <ion-card-title>Card Title</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
+        <ion-card-content class="ml-2">
           Here's a small text description for the card content. Nothing more,
           nothing less.
         </ion-card-content>

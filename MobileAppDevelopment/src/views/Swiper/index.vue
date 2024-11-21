@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
-        <ion-title class="bg-warning"> Swiper </ion-title>
+        <ion-title> Swiper </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
