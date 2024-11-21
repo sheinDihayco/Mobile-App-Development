@@ -1,16 +1,16 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
-        <ion-Title> Menu Page </ion-Title>
+        <ion-title>Menu Page</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
-      <h1 class="px-4 py-5 text-center">This is the menu page</h1>
+    <ion-content :fullscreen="true" class="ion-padding">
+      <h1 class="text-center menu-title">Welcome to the Menu Page</h1>
     </ion-content>
   </ion-page>
 </template>
@@ -25,11 +25,11 @@ import {
   IonHeader,
   IonPage,
   IonContent,
-  IonFooter,
 } from '@ionic/vue';
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
-  name: 'SignInScreen',
+  name: 'MenuPage',
   components: {
     IonBackButton,
     IonButtons,
@@ -38,7 +38,20 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonContent,
-    IonFooter,
   },
 });
 </script>
+
+<style scoped>
+.menu-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.button-container {
+  margin: 0 auto;
+  max-width: 300px;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-buttons slot="start">
           <ion-back-button></ion-back-button>
         </ion-buttons>
@@ -16,7 +16,7 @@
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
+        <ion-card-content class="m-2">
           Here's a small text description for the card content. Nothing more,
           nothing less.
         </ion-card-content>

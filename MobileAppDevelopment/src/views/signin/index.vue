@@ -1,98 +1,121 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-Title> Sign In Screen </ion-Title>
       </ion-toolbar>
     </ion-header>
-
     <ion-content :fullscreen="true">
-      <section class="vh-100 px-4 py-5">
+      <section class="vh-100 px-2 py-3">
         <div class="container-fluid h-custom">
           <div
-            class="row d-flex justify-content-center align-items-center h-100"
+            class="row d-flex justify-content-center align-items-center g-2 h-100"
           >
-            <div class="col-md-9 col-lg-6 col-xl-5">
+            <!-- Image Section -->
+            <div class="col-md-6 col-lg-5 col-m-4 text-center">
               <img
                 src="../../../image/image.webp"
-                class="img-fluid"
+                class="img-fluid custom-img"
                 alt="Sample image"
               />
             </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+            <!-- Form Section -->
+            <div class="col-md-6 col-lg-5 col-m-4 signin">
               <form>
+                <!-- Social Login -->
                 <div
-                  class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+                  class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-2"
                 >
-                  <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                  <p class="lead fw-normal mb-1 me-2" style="font-size: 0.9rem">
+                    Sign in with
+                  </p>
                   <button
                     type="button"
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-primary btn-floating mx-1"
+                    class="btn btn-sm btn-primary btn-floating mx-1"
                   >
                     <i class="fab fa-facebook-f"></i>
                   </button>
-
                   <button
                     type="button"
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-primary btn-floating mx-1"
+                    class="btn btn-sm btn-primary btn-floating mx-1"
                   >
                     <i class="fab fa-twitter"></i>
                   </button>
-
                   <button
                     type="button"
                     data-mdb-button-init
                     data-mdb-ripple-init
-                    class="btn btn-primary btn-floating mx-1"
+                    class="btn btn-sm btn-primary btn-floating mx-1"
                   >
                     <i class="fab fa-linkedin-in"></i>
                   </button>
                 </div>
 
-                <div class="divider d-flex align-items-center my-4">
-                  <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                <!-- Divider -->
+                <div class="divider d-flex align-items-center my-3">
+                  <p
+                    class="text-center fw-bold mx-2 mb-0"
+                    style="font-size: 0.9rem"
+                  >
+                    Or
+                  </p>
                 </div>
 
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
+                <!-- Email Input -->
+                <div data-mdb-input-init class="form-outline mb-3">
                   <input
                     type="email"
                     id="form3Example3"
-                    class="form-control form-control-lg"
+                    class="form-control form-control-sm"
                     placeholder="Enter a valid email address"
+                    style="font-size: 0.8rem"
                   />
-                  <label class="form-label" for="form3Example3"
+                  <label
+                    class="form-label"
+                    for="form3Example3"
+                    style="font-size: 0.8rem"
                     >Email address</label
                   >
                 </div>
 
-                <!-- Password input -->
+                <!-- Password Input -->
                 <div data-mdb-input-init class="form-outline mb-3">
                   <input
                     type="password"
                     id="form3Example4"
-                    class="form-control form-control-lg"
+                    class="form-control form-control-sm"
                     placeholder="Enter password"
+                    style="font-size: 0.8rem"
                   />
-                  <label class="form-label" for="form3Example4">Password</label>
+                  <label
+                    class="form-label"
+                    for="form3Example4"
+                    style="font-size: 0.8rem"
+                    >Password</label
+                  >
                 </div>
 
+                <!-- Remember Me Checkbox -->
                 <div class="d-flex justify-content-between align-items-center">
-                  <!-- Checkbox -->
                   <div class="form-check mb-0">
                     <input
                       class="form-check-input me-2"
                       type="checkbox"
                       value=""
                       id="form2Example3"
+                      style="width: 0.8rem; height: 0.8rem"
                     />
-                    <label class="form-check-label" for="form2Example3">
-                      Remember me
-                    </label>
+                    <label
+                      class="form-check-label"
+                      for="form2Example3"
+                      style="font-size: 0.8rem"
+                      >Remember me</label
+                    >
                   </div>
                 </div>
               </form>
@@ -101,7 +124,6 @@
         </div>
       </section>
     </ion-content>
-
     <ion-footer>
       <ion-toolbar class="p-1">
         <button slot="end" class="btn btn-primary w-25" @click="nextScreen()">
@@ -156,5 +178,19 @@ export default defineComponent({
   .h-custom {
     height: 100%;
   }
+}
+.custom-img {
+  max-width: 75%; /* Adjust this percentage as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image if needed */
+  display: block; /* Ensure the image is block-level */
+  margin-top: -25%;
+}
+.signin {
+  margin-top: -70%;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
 }
 </style>

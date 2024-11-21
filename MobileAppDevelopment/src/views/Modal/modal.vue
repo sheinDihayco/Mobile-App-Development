@@ -1,6 +1,6 @@
 <template>
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
       <ion-buttons slot="start">
         <ion-button :strong="true" @click="cancel">Cancel</ion-button>
       </ion-buttons>
